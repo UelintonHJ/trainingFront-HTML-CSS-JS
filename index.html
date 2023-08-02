@@ -8,18 +8,46 @@
     <link
       <link
       <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla&family=News+Cycle&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla&family=Libre+Franklin:wght@300&family=News+Cycle&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+        if (scrollTop > 0) {
+          navbar.classList.add('scrolled');
+          console.log('Scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+          console.log('Not scrolled');
+        }
+      });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+        var apresentation = document.getElementById('apresentation_header');
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+        if (scrollTop > 0) {
+          apresentation.classList.add('scrolled');
+          console.log('Scrolled');
+        } else {
+          apresentation.classList.remove('scrolled');
+          console.log('Not scrolled');
+        }
+      });
+    </script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
         <img
           src="/assets/1404055820.png"
           alt="Marcela Grassi - Graphic & Web Design"
         />
-        <ul>
+        <ul class="after-scrolling-cursor-pointer">
           <li class="box_active">
             <a href="#"><span>Portfolio</span></a>
           </li>
@@ -81,17 +109,137 @@
         <a><img src="assets/9056240.png" /></a>
         <a><img src="assets/4894717.png" /></a>
       </section>
-      <hr>
-      <section id="customersPartners_main">  
+      <hr />
+      <section id="customersPartners_main">
         <h2>Clientes & Parceiros</h2>
         <div>
-          <a href=""><img src="/assets/escola.png" alt=""></a>
-          <a href=""><img src="/assets/jml2.png" alt=""></a>
-          <a href=""><img src="/assets/instituto-positivo.png"></a>
-          <a href=""><img src="/assets/corpolivre.png" alt=""></a>
-          <a href=""><img src="/assets/isae.png" alt=""></a>
+          <a href=""><img src="/assets/escola.png" alt="" /></a>
+          <a href=""><img src="/assets/jml2.png" alt="" /></a>
+          <a href=""><img src="/assets/instituto-positivo.png" /></a>
+          <a href=""><img src="/assets/corpolivre.png" alt="" /></a>
+          <a href=""><img src="/assets/isae.png" alt="" /></a>
+        </div>
+        <a><button>Confira mais clientes >></button></a>
+      </section>
+      <section id="content">
+        <div>
+          <a href="#"><img src="/assets/4016359.png" alt="" /></a>
+          <h3>Design Gr<strong>á</strong>fico</h3>
+          <p>
+            Além da importante função de comunicar, o design tem o poder de
+            encantar, atrair e "encher os olhos", transmitindo emoções e criando
+            vínculos com o seu cliente. O design é uma importante ferramenta de
+            diferenciação das empresas no mercado.
+          </p>
+        </div>
+        <div>
+          <a href="#"><img src="/assets/3808538.png" alt="" /></a>
+          <h3>Branding</h3>
+          <p>
+            A identidade visual é o sistema de elementos visuais que
+            singularizam e identificam sua empresa. Uma marca forte obtém
+            benefícios que fazem com que a empresa tenha uma imagem corporativa
+            consolidada.
+          </p>
+        </div>
+        <div>
+          <a href="#"><img src="/assets/6379100.png" alt="" /></a>
+          <h3>Web Design</h3>
+          <p>
+            Os websites estabelecem a comunicação entre o cliente e a empresa.
+            Um site bem planejado gera valores à identidade da marca, auxiliando
+            na experiência positiva do cliente e, com isso, fortalecendo a
+            imagem do negócio.
+          </p>
+        </div>
+        <div>
+          <a href="#"><img src="/assets/663268.png" alt="" /></a>
+          <h3>Editorial</h3>
+          <p>
+            O projeto gráfico, diagramação e editoração bem planejados tem o
+            objetivo de atingir e atrair o seu público leitor através do design,
+            com um layout harmônico e hierarquia de informações projetadas para
+            um livro, catálogo, revista, jornal, ou qualquer outra publicação.
+          </p>
         </div>
       </section>
+      <h3 id="title-section_blog">Blog</h3>
+      <section id="blog">
+        <div>
+          <a href=""><img src="/assets/636505.png" alt="" /></a>
+          <span>A importância do design: uma estratégia de sucesso</span>
+          <p>
+            Já se foi o tempo em que o design era algo supérfluo, criado apenas
+            para “enfeitar” determinado produto ou serviço. Aliado com as demais
+            estratégias de negócios, o design é uma das mais importantes
+            ferramentas de diferenciação das empresas no mercado [...]
+          </p>
+          <a href=""><button>Leia mais</button></a>
+        </div>
+        <div>
+          <a href=""><img src="/assets/5789331.png" alt="" /></a>
+          <span>Redesign do site: quando é a hora?</span>
+          <p>
+            Ao iniciar o seu negócio, seu site estava de acordo com o mercado em
+            questão com as tendências da época, não é mesmo? Mas, como todos
+            sabem, o design está em constante evolução, e é preciso ficar atento
+            com os sinais para descobrir em qual momento é necessário redesenhar
+            o seu site ou e-commerce [...]
+          </p>
+          <a href=""><button>Leia mais</button></a>
+        </div>
+      </section>
+      <section id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1274.138058999123!2d-49.260974446239935!3d-25.411282036849695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1689202000286!5m2!1spt-BR!2sbr"
+          width="1200"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <span
+          ><a href="https://goo.gl/maps/P1vpztFB1bsTsAco6"
+            >R. Moysés Marcondes, 786 - Juvevê, Curitiba - PR, 80530-320</a
+          ></span
+        >
+      </section>
     </main>
+    <footer>
+      <img src="/assets/1404055820.png" alt="" />
+      <div id="contacts-rightReserveds">
+        <span class="name-contact">Marcela Grassi Mendes de Faria</span>
+        <span class="name-contact"
+          >Entre em contato: <strong>contato@marcelagrassi.com.br</strong></span
+        >
+        <span id="rightReserveds">2020 · Todos os direitos reservados.</span>
+      </div>
+      <div id="socialMedia">
+        <a href=""
+          ><img
+            src="/assets/734386_facebook_media_online_social_icon.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="/assets/734367_media_online_social_twitter_icon.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="/assets/734393_in_linked_media_online_social_icon.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="/assets/1011335_email_envelope_mail_message_send_icon.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img src="/assets/734382_online_pinterest_icon.png" alt=""
+        /></a>
+      </div>
+    </footer>
   </body>
-</html>
+</html>                        

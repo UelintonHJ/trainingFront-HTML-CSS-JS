@@ -6,6 +6,11 @@
     --bg-button_center-header: #ffffff;
     --txt-button:rgb(176, 252, 235);
     --txt-section: #2a2a2a;
+    --button-main: #2A92E5;
+    --titleSpan-blog: rgb(131, 101, 129);
+    --text-main: #717070;
+    --color-footer: #262626;
+    --right-reserveds: rgb(181, 181, 181);
 }
 
 * {
@@ -17,26 +22,39 @@
 body {
     width: 100%;
     height: 100vh;
-    font-family: 'Karla','Bebas Neue','News Cycle',sans-serif;
+    font-family: 'Karla','Bebas Neue','News Cycle', 'Libre Franklin', 'Open Sans', sans-serif;
     color: #666666;
     -webkit-font-smoothing: antialiased;
 }
 
 header {
-    background-image: url(/assets/1833667980.jpg);
+    background-image: url(/assets/o-ceu-noturno-brilha-com-iridescente-ia-generativa-do-espaco-profundo.jpg);
     background-size: cover;
+    background-position: center;
     min-height: 630px;  
 }
 
 header img {
     cursor: pointer;
+    max-width: 250px;
+    max-height: 60px;
 }
 
-nav {
+#navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
     padding: 20px 30px;
+    top: 0;
+    width: 100%;
+    height: 13%;
+    transition: all 250ms ease;
+}
+
+#navbar.scrolled {
+    background-color: var(--bg-navbar);
+    height: 11%;
 }
 
 nav ul {
@@ -50,6 +68,7 @@ nav ul {
 nav li {
     padding: 8px 12px;
     border: 2px solid transparent;
+    
 }
 
 nav li:hover {
@@ -80,7 +99,14 @@ nav a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 140px 0px 160px 0px;
+    padding: 200px 0px 160px 0px;
+    transition: all 250ms ease;
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+#apresentation_header.scrolled { 
+    opacity: 0;
 }
 
 header h1 {
@@ -127,7 +153,8 @@ header button a:hover {
     display:inline-block;
     align-items: center;
     justify-content: center;
-    padding: 3% 10% 3% 16%; 
+    padding: 3% 10% 3% 16%;
+    cursor: pointer;
 }
 
 main img {
@@ -165,6 +192,155 @@ hr {
     height: 100%;
 }
 
+main button {
+    padding: 8px 16px;
+    border: 2px solid var(--button-main);
+    background-color: transparent;
+    cursor: pointer;
+}
 
+main a button {
+    font-family: 'Bebas', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--button-main);
+}
 
+main button:hover {
+    background-color: var(--button-main);
+}
 
+main a button:hover {
+    color: #ffffff;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    padding: 42px 0 0 42px;
+    gap: 15px;
+}
+
+#content div {
+    width: 350px;
+}
+
+#content img {
+    width: 20%;
+    height: 30%;
+}
+
+#content div h3 {
+    font-family: 'Bebas', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: var(--txt-section);
+}
+
+#content strong {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+#content p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--text-main);
+}
+
+#title-section_blog {
+    text-align: center;
+    font-family: 'Bebas', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    color: var(--txt-section);
+}
+
+#blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    gap: 10%;
+}
+
+#blog div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 550px;
+}
+
+#blog img {
+    width: 550px;
+    height: 175px;
+}
+
+#blog span {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--titleSpan-blog);
+}
+
+#blog p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--text-main);
+}
+
+#map {
+    margin: 3% 18% 3% 18%;
+}
+
+#map span a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2% 10% 2% 10%;
+    background-color: var(--color-footer);
+}
+
+#contacts-rightReserveds {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.name-contact {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    text-transform: none;
+    color: var(--text-header);
+    
+}
+
+#rightReserveds {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    text-transform: none;
+    color: var(--right-reserveds);
+}
+
+#socialMedia img{
+    width: 30px;
+    height: 30px;
+}
