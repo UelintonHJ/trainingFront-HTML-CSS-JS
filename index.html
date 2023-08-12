@@ -12,30 +12,32 @@
       rel="stylesheet"
     />
     <script>
-      window.addEventListener('scroll', function() {
-        var navbar = document.getElementById('navbar');
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
         if (scrollTop > 0) {
-          navbar.classList.add('scrolled');
-          console.log('Scrolled');
+          navbar.classList.add("scrolled");
+          console.log("Scrolled");
         } else {
-          navbar.classList.remove('scrolled');
-          console.log('Not scrolled');
+          navbar.classList.remove("scrolled");
+          console.log("Not scrolled");
         }
       });
     </script>
     <script>
-      window.addEventListener('scroll', function() {
-        var apresentation = document.getElementById('apresentation_header');
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
+      window.addEventListener("scroll", function () {
+        var apresentation = document.getElementById("apresentation_header");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
         if (scrollTop > 0) {
-          apresentation.classList.add('scrolled');
-          console.log('Scrolled');
+          apresentation.classList.add("scrolled");
+          console.log("Scrolled");
         } else {
-          apresentation.classList.remove('scrolled');
-          console.log('Not scrolled');
+          apresentation.classList.remove("scrolled");
+          console.log("Not scrolled");
         }
       });
     </script>
@@ -75,39 +77,224 @@
     </header>
     <main>
       <section id="projects_main">
-        <a><img src="/assets/img-destaque-harmonic.jpg" /></a>
-        <a><img src="/assets/quadrado.png" /></a>
-        <a><img src="/assets/quadrada.jpg" /></a>
-        <a><img src="/assets/ls-home.jpg" /></a>
-        <a><img src="/assets/gw-4.jpg" /></a>
-        <a><img src="/assets/img-destaque-bbadv.jpg" /></a>
-        <a><img src="/assets/img-destaque-equilibicho.png" /></a>
-        <a><img src="/assets/principal-jml.jpg" /></a>
-        <a><img src="assets/img-destaque-goldenlicia.png" /></a>
-        <a><img src="assets/cadore-flyer.png" /></a>
-        <a><img src="assets/dogstop-principal.png" /></a>
-        <a><img src="assets/principal-fourmi.jpg" /></a>
-        <a><img src="assets/ebook.png" /></a>
-        <a><img src="assets/mockup-capa2.png" /></a>
-        <a><img src="assets/destaquecorpolivre.png" /></a>
-        <a><img src="assets/quadrada_2.png" /></a>
-        <a><img src="assets/landingpage-escola.png" /></a>
-        <a><img src="assets/quadrada_1.png" /></a>
-        <a><img src="assets/3910279.jpg" /></a>
-        <a><img src="assets/quadrada.png" /></a>
-        <a><img src="assets/6284179.jpg" /></a>
-        <a><img src="assets/quadrada_5.png" /></a>
-        <a><img src="assets/post-depoimento-sebrae_1.png" /></a>
-        <a><img src="assets/8422677.jpg" /></a>
-        <a><img src="assets/wawel.jpg" /></a>
-        <a><img src="assets/4446361.jpg" /></a>
-        <a><img src="assets/6719231.jpg" /></a>
-        <a><img src="assets/284822.png" /></a>
-        <a><img src="assets/1110548.png" /></a>
-        <a><img src="assets/7408860.png" /></a>
-        <a><img src="assets/9327091.png" /></a>
-        <a><img src="assets/9056240.png" /></a>
-        <a><img src="assets/4894717.png" /></a>
+        <div class="img-container">
+          <a
+            ><img src="/assets/img-destaque-harmonic.jpg" class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Harmonic
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="/assets/quadrado.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Menezes Consultoria
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="/assets/quadrada.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Wawel
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="/assets/ls-home.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Leticia Sugai
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="/assets/gw-4.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Go Watches
+          </h2>
+        </div>
+        <div class="img-container">
+          <a
+            ><img src="/assets/img-destaque-bbadv.jpg" class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual e Website - BB Advogados
+          </h2>
+        </div>
+        <div class="img-container">
+          <a
+            ><img
+              src="/assets/img-destaque-equilibicho.png"
+              class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Equilibicho
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="/assets/principal-jml.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Portfolio Digital. Cliente: Grupo JML
+          </h2>
+        </div>
+        <div class="img-container">
+          <a
+            ><img
+              src="assets/img-destaque-goldenlicia.png"
+              class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Branding - Goldenlícia
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/cadore-flyer.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Flyer // Ca'dore Comida Descomplicada
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/dogstop-principal.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Branding // DogStop Creche Canina
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/principal-fourmi.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Fourmi
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/ebook.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Design de E-book // Goldenlícia
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/mockup-capa2.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Livro // Plano de Turismo Criativo de Brasília
+          </h2>
+        </div>
+        <div class="img-container">
+          <a
+            ><img src="assets/destaquecorpolivre.png" class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Logotipo e Website // Academia Studio Corpo Livre
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/quadrada_2.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Branding & Cardápio // Campeiro Sanduíches Rústicos
+          </h2>
+        </div>
+        <div class="img-container">
+          <a
+            ><img src="assets/landingpage-escola.png" class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Landing Page // Escola de Criatividade
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/quadrada_1.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Branding // Amoreira
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/3910279.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Endo Pet - Endoscopia Veterinária.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/quadrada.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual e Web Design // 6mais
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/6284179.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Amarena Doceria Artesanal
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/quadrada_5.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Blog // Escola de Criatividade
+          </h2>
+        </div>
+        <div class="img-container">
+          <a
+            ><img
+              src="assets/post-depoimento-sebrae_1.png"
+              class="img-projects"
+          /></a>
+          <h2 class="title-img_hover">
+            Midias sociais // Escola de Criatividade
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/8422677.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Vanderlei Taverna Advocacia.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/wawel.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Espaço Fitness
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/4446361.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Projeto de Identidade Visual - Rodrigo Corrêa Advocacia.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/6719231.jpg" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Design de logotipo // espaço colaborativo Lab56
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/284822.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Sistema de Identidade Visual para empresa Mimos de Mel. Trabalho de Conclusão de Curso, UTFPR.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/1110548.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Design de Interface Web - Layout para loja virtual. Desenvolvido na empresa Ciashop E-Commerce. Cliente: Unalunna.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/7408860.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Design de Interface Web - Template para loja virtual. Desenvolvido na empresa Ciashop E-Commerce.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/9327091.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Marca - Sistema de Identidade Visual. Cliente: Lumia Cosméticos.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/9056240.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Marca - Identidade Visual. Cliente: Margarida.
+          </h2>
+        </div>
+        <div class="img-container">
+          <a><img src="assets/4894717.png" class="img-projects" /></a>
+          <h2 class="title-img_hover">
+            Marca - Sistema de Identidade Visual para empresa Mimos de Mel. Trabalho de Conclusão de Curso, UTFPR.
+          </h2>
+        </div>
       </section>
       <hr />
       <section id="customersPartners_main">
@@ -242,4 +429,4 @@
       </div>
     </footer>
   </body>
-</html>                        
+</html>
