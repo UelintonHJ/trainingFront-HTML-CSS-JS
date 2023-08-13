@@ -4,7 +4,7 @@
     --border-box: #ffffff;
     --bg-optionsList: #000000;
     --bg-button_center-header: #ffffff;
-    --txt-button:rgb(176, 252, 235);
+    --txt-button: #180472;
     --txt-section: #2a2a2a;
     --button-main: #2A92E5;
     --titleSpan-blog: rgb(131, 101, 129);
@@ -152,7 +152,7 @@ header button a:hover {
 #projects_main {
     display:flex;
     flex-wrap: wrap;
-    margin: 4% 5% 5% 15.2%;
+    margin: 4% 5% 2% 15.2%;
     cursor: pointer;
 }
 
@@ -194,7 +194,7 @@ img {
     font-size: 20px;
     font-weight: 300;
     transform: translateY(100%);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.6s ease, opacity 0.6s ease;
     color: white;
     opacity: 0;
     
@@ -206,9 +206,8 @@ img {
 }
 
 hr {
-    margin-left: 16%;
-    width: 67%;
-    color: #666666;
+    margin-left: 15.3%;
+    width: 68.3%;
 }
 
 #customersPartners_main {
@@ -391,4 +390,14 @@ footer img {
 #socialMedia img{
     width: 30px;
     height: 30px;
+    transition: transform 0.8s ease;
 }
+
+#socialMedia img:hover {
+    background-color: #2180cc; 
+    border-radius: 50%;
+    padding: 1.7%;
+    opacity: 0.8;
+    transform: translateY(-50%);
+}
+
